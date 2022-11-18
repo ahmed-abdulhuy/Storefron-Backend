@@ -11,10 +11,10 @@ const HOST = "localhost",
 
 const corsOptions = {
   origin: "*",
-  optionsSuccessStatus: 200
-}
+  optionsSuccessStatus: 200,
+};
 
-app.use(cors(corsOptions))
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 users_routes(app);

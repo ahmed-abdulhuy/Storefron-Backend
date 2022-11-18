@@ -12,5 +12,4 @@ describe("Products Model Tests", () => {
   it("should have create method", () => {
     expect(store.create).toBeDefined();
   });
-
 });

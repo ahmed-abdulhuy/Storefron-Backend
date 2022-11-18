@@ -32,7 +32,7 @@ const user_completed_order = async (
   res: Response
 ): Promise<void> => {
   try {
-    console.log("order")
+    console.log("order");
     const authHeader = req.headers.authorization as string;
     const token = authHeader.split(" ")[1];
     Jwt.verify(token, process.env.TOKEN_SECRET as string);

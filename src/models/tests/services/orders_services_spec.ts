@@ -1,6 +1,6 @@
 import OrderServices from "../../services/order_services";
 
-const storeServices = new OrderServices()
+const storeServices = new OrderServices();
 
 describe("Orders Services Model Tests", () => {
   it("should have user_completed_order method", () => {

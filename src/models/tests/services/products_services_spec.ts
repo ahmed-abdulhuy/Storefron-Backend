@@ -6,9 +6,8 @@ describe("Products Services Model Tests", () => {
   it("should have popularProducts method", () => {
     expect(storeServices.popularProducts).toBeDefined();
   });
-  
+
   it("should have categoryProducts method", () => {
     expect(storeServices.categoryProducts).toBeDefined();
   });
-
-})
+});

@@ -36,7 +36,7 @@ $ create database store_test
 
 From the project directory, you can run
 ```
-$npm run start
+$ npm run watch
 ```
 Runs the development server.
 ```

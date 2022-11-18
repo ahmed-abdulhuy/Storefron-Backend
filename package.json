@@ -4,11 +4,10 @@
   "description": "project 2 for advanced fullstack nano-degree create fully function store api",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/server.ts",
     "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
     "tsc": "tsc",
     "test": "npm run build && npm run jasmine",
-    "start_production": "node dist/index.js",
+    "start_production": "node dist/server.js",
     "build": "npx tsc",
     "jasmine": "jasmine",
     "prettier": "prettier --config .prettierrc './**/*.ts' --write",
@@ -34,7 +33,6 @@
     "@types/jsonwebtoken": "^8.5.9",
     "@types/node": "^18.11.3",
     "@types/pg": "^8.6.5",
-    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "dotenv": "^16.0.3",
@@ -46,7 +44,6 @@
     "jasmine-ts": "^0.4.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
-    "supertest": "^6.3.0",
     "ts-node": "^8.10.2",
     "tsc-watch": "^5.0.3",
     "typescript": "^4.8.4"

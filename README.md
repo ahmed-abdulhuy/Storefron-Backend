@@ -11,56 +11,38 @@ This project is built with technologies:
 ### Backend runs on http:localhost:3000
 
 # Install packages
-```
-$ npm install
-```
-
-# Steps to run the backend database server
-## 1. Sratr Postgress container
-  ```
-$ docker-compose up
-  ```
-## 2. Connect to database container
-  ```
-$ psql -h 127.0.0.1 -U naruto postgres
-  password: password123
-  ```
-## 3. Create dev and test databases
-` In the same previous terminal`
-```
-$ create database store
-$ create database store_test
+``` sh
+npm install
 ```
 
 # Available Scripts
 
 From the project directory, you can run
-```
+``` sh
 $ npm run watch
 ```
 Runs the development server.
-```
+``` sh
 $ npm run start_production
 ```
 Runs production server
-```
+``` sh
 $ npm run build
 ```
 Starts building project
-```
+``` sh
 $ npm run jasmine
 ```
 Runs tests with Jasmine
-```
+``` sh
 $ npm run test
-```
+``` 
 Builds and runs tests with Jasmine test library
-```
+``` sh
 $ npm run lint
 ```
 Use Eslint on code
-
-```
+``` sh
 $ npm run prettier
 ```
 Format the code

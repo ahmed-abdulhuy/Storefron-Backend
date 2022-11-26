@@ -4,10 +4,10 @@
   "description": "project 2 for advanced fullstack nano-degree create fully function store api",
   "main": "src/index.js",
   "scripts": {
-    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
+    "watch": "tsc-watch --esModuleInterop src/index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
     "tsc": "tsc",
     "test": "npm run build && npm run jasmine",
-    "start_production": "node dist/server.js",
+    "start_production": "node dist/indexjs",
     "build": "npx tsc",
     "jasmine": "jasmine",
     "prettier": "prettier --config .prettierrc './**/*.ts' --write",

@@ -30,6 +30,24 @@ describe('User Handlers Response', () => {
                             .send({query})
     
     expect(response.status).toBe(200);
-    // expect(response.body)
+    expect(response.body).toBeTruthy();
+  })
+
+  it(" Get request to show all users", async () => {
+    const response = await request.get("/users")
+                      .set("authorization", 
+                      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJmaXJzdG5hbWUiOm51bGwsImxhc3RuYW1lIjpudWxsLCJwYXNzd29yZCI6IiQyYiQxMCRFWnpBcndzRWNhQW8xSHNab0tpTmMuSUg4RGdiNkxwTVd2QUZUSmJ3ajZPbmVtdVBDdmEzNiJ9LCJpYXQiOjE2Njk0MzQ5NjV9.RSv5vn3C6d6W0FI6dc3KH-rMG5tLyOM_pTfegTJjWWw")
+
+    expect(response.status).toBe(200);
+    expect(response.body).toBeTruthy();
+  })
+
+  it(" Get request to show user by ID", async () => {
+    const response = await request.get("/users/1")
+                      .set("authorization", 
+                      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJmaXJzdG5hbWUiOm51bGwsImxhc3RuYW1lIjpudWxsLCJwYXNzd29yZCI6IiQyYiQxMCRFWnpBcndzRWNhQW8xSHNab0tpTmMuSUg4RGdiNkxwTVd2QUZUSmJ3ajZPbmVtdVBDdmEzNiJ9LCJpYXQiOjE2Njk0MzQ5NjV9.RSv5vn3C6d6W0FI6dc3KH-rMG5tLyOM_pTfegTJjWWw")
+
+    expect(response.status).toBe(200);
+    expect(response.body).toBeTruthy();
   })
 })

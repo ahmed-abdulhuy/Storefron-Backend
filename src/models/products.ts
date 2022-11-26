@@ -16,6 +16,7 @@ export class ProductStore {
       conn.release();
       return result.rows;
     } catch (err) {
+      console.log(err)
       throw new Error(`connot get products: ${err}`);
     }
   }

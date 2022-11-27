@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "tsc-watch --esModuleInterop src/index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
     "tsc": "tsc",
-    "test": "npm run build && npm run jasmine",
+    "test": "db-migrate up -e test && npm run build && npm run jasmine && db-migrate reset -e test",
     "start_production": "node dist/indexjs",
     "build": "npx tsc",
     "jasmine": "jasmine",
